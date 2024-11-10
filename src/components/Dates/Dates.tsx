@@ -1,11 +1,11 @@
 'use client';
 function Dates() {
-    let ourDate:Date = new Date();
-    let ourDay:number = ourDate.getDay();
-    let ourDat:number = ourDate.getDate();
-    let ourMonth:number = ourDate.getMonth(); 
-    let dayList:string[] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    let monthList:string[] = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+    const ourDate:Date = new Date();
+    const ourDay:number = ourDate.getDay();
+    const ourDat:number = ourDate.getDate();
+    const ourMonth:number = ourDate.getMonth(); 
+    const dayList:string[] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const monthList:string[] = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
     return (
       <>
        <div className="date">

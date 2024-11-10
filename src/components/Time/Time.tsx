@@ -1,16 +1,16 @@
 'use client';
 import { useEffect, useState } from "react";
 function Time() {
-  let [hour,setHour] = useState(0);
-  let [mins,setMin] = useState(0);
-  let [sec,setSec] = useState(0);
+  const [hour,setHour] = useState(0);
+  const [mins,setMin] = useState(0);
+  const [sec,setSec] = useState(0);
   useEffect(() => {
 
    const interval =  setInterval(() => {
-        let ourDate:Date = new Date();
-        let digiHours:number = ourDate.getHours();
-        let digiMins:number = ourDate.getMinutes();
-        let digiSec:number = ourDate.getSeconds();
+        const ourDate:Date = new Date();
+        const digiHours:number = ourDate.getHours();
+        const digiMins:number = ourDate.getMinutes();
+        const digiSec:number = ourDate.getSeconds();
         setHour(digiHours);
         setMin(digiMins);
         setSec(digiSec);
@@ -18,7 +18,7 @@ function Time() {
       return () => clearInterval(interval);
   },[]);
   
-  let decreaseHour = hour > 12 ? hour-12 : hour;
+  const decreaseHour = hour > 12 ? hour-12 : hour;
   return (
     <>
       <div className="time">
